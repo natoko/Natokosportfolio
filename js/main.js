@@ -14,14 +14,23 @@
   const works = [
     {image: 'img/Portfolio.png',
      title : 'Portfolio Site',
-     url : 'aaa',
-     detail: 'このサイトです。',
+     url : 'https://natoko.github.io/Natokosportfolio/',
+     sourcecode : 'https://github.com/natoko/Natokosportfolio',
+     detail: 'このサイトです。レスポンシブデザインになるようにBootstrapで調整をしました。「Works」のクリックして詳細表示のところはJavaScriptで作成しています。',
      skill: 'HTML,CSS,Bootstrap,JavaScript',
    },
-    {image: 'img/SpellCheaker.png',
-     title : 'SpellCheakGame',
-     url : 'bbb',
-     detail: 'SpellCheakのゲームです。',
+    {image: 'img/Fananimation.png',
+     title : 'Fan Animation',
+     url : 'https://natoko.github.io/Fananimation/',
+     sourcecode : 'https://github.com/natoko/Fananimation',
+     detail: 'JavaScriptのcanvasを使用した扇風機のアニメーションです。',
+     skill: 'HTML,CSS,JavaScript',
+   },
+    {image: 'img/Waveanimation.png',
+     title : 'Wave Animation',
+     url : 'https://natoko.github.io/Waveanimation/',
+     sourcecode : 'https://github.com/natoko/Waveanimation',
+     detail: 'JavaScriptのcanvasを使用した波と泡のアニメーションです',
      skill: 'HTML,CSS,JavaScript',
    },
   ];
@@ -88,12 +97,16 @@
       const productinfo = this.template.cloneNode(true);
       // 各項目のNodeを取得
       const titlenode = productinfo.getElementsByClassName('product_title');
-      const linknode = productinfo.getElementsByClassName('product_link');
+      const linknode = productinfo.querySelector('.product_link > a');
+      const sorcenode = productinfo.querySelector('.product_sourcecode > a');
       const detailnode = productinfo.getElementsByClassName('product_detail');
       const skillnode = productinfo.getElementsByClassName('product_skill');
       // title,link,内容,skillをセット
       titlenode[0].textContent = works[imgindex].title;
-      linknode[0].textContent = works[imgindex].url;
+      linknode.textContent = works[imgindex].url;
+      linknode.href = works[imgindex].url;
+      sorcenode.textContent = works[imgindex].sourcecode;
+      sorcenode.href = works[imgindex].sourcecode;
       detailnode[0].textContent = works[imgindex].detail;
       skillnode[0].textContent = works[imgindex].skill;
       // id classをセット

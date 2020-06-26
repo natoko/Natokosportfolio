@@ -33,7 +33,7 @@ body {
 }
 
 #navbar li:hover{
-  border-bottom: solid rgba(255, 255, 255, 1);
+  border-bottom: 3px solid rgba(255, 255, 255, 1);
 }
 
 #navbar a{
@@ -175,16 +175,22 @@ main{
 
 #Worksinfo table{
   margin: 0 auto;
-  max-width: 80%;
+  width: 80%;
+  font-size: 0.8em;
 }
 
+#Worksinfo thead th{
+  font-size: 2em;
+  padding: 5px 0;
+}
 #Worksinfo tbody th{
   width: 150px;
+  vertical-align: top;
 }
 #Worksinfo tbody th::after{
   content: ":";
   float: right;
-  padding-right: 30px;
+  padding-right: 15px;
 }
 
 .hide{
