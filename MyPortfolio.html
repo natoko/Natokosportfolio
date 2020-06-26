@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Natoko's portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  </head>
+<body>
+  <nav id="navbar" class="">
+    <ul>
+      <li>
+        <div class="naviitem">
+          <a href="#Profile">
+            <p class="nav">
+              <i class="fas fa-user pt-2"></i>
+              <span class="pl-2">Profile</span>
+            </p>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="naviitem">
+          <a href="#Works">
+            <p class="nav">
+              <i class="fas fa-code pt-2"></i>
+              <span class="pl-2">Works</span>
+            </p>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="naviitem">
+          <a href="#Contact">
+            <p class="nav">
+              <i class="fas fa-envelope pt-2"></i>
+              <span class="pl-2">Contact</span>
+            </p>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <header id="header">
+    <h1 class="font-weight-bold text-white">Natoko's portfolio</h1>
+  </header>
+  <main>
+    <!-- Profile section -->
+    <section  id="Profile" class="container pt-3">
+      <div class="section_title text-center mb-3">
+        <h2 class="section_title_Profile">
+          <i class="fas fa-user"></i>
+          <span class="pl-2">Profile</span>
+        </h2>
+      </div>
+      <div class="info d-md-flex">
+        <div class="Profileimage">
+          <img src="img/profile-picture-1589520040.jpg" alt="なとこのプロフィール画像">
+        </div>
+        <div class="Profile_info pl-0 pt-3 pt-md-0 pl-md-5 text-center text-md-left">
+          <h3>自己紹介</h3>
+          <p>はじめまして。なとこと申します。<br>平成4年生まれ、27歳です。<br>社会人歴(IT業界)5年目です。</p>
+          <p>金融系システムを主に中小企業SIerで働いています。<br>保険やカードの業務システム開発を経験してきました。</p>
+          <p>技術面でよりスキルアップを目指したいと考えて<br>2020年4月からWeb開発について勉強中です。</p>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="text-center text-md-left mt-3">
+          <h3>スキル</h3>
+        </div>
+        <div class="skillinfo container py-3 mt-3 bg-white d-flex flex-wrap justify-content-around">
+          <div class="topic">
+            <div class="topic_title bg-light text-center">
+              <h4>言語</h4>
+            </div>
+              <ul>
+                <li>COBOL</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP7</li>
+              </ul>
+          </div>
+          <div class="topic">
+            <div class="topic_title bg-light text-center">
+              <h4>環境</h4>
+            </div>
+            <ul>
+              <li>Windows</li>
+              <li>z/OS</li>
+              <li>DB2</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div class="topic">
+            <div class="topic_title bg-light text-center">
+              <h4>担当工程</h4>
+            </div>
+            <ul>
+              <li>保守・運用</li>
+              <li>詳細設計</li>
+              <li>実装</li>
+              <li>テスト</li>
+            </ul>
+          </div>
+          <div class="topic">
+            <div class="topic_title bg-light text-center">
+              <h4>その他</h4>
+            </div>
+            <ul>
+              <li>Bootstrap</li>
+              <li>HLL/WB</li>
+            </ul>
+            <div class="topic_title bg-light text-center">
+            <h4>保有資格</h4>
+            </div>
+            <ul>
+              <li>基本情報技術者</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Works section -->
+    <section id="Works" class="container pt-3">
+      <div class="section_title text-center mb-3">
+        <h2 class="section_title_Works">
+          <i class="fas fa-code"></i>
+          <span class="pl-2">Works</span>
+        </h2>
+      </div>
+      <div id="WorksList" class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img>
+          </div>
+        </div>
+        <div class="swiper-nav swiper-nav-prev">&#9668;</div>
+        <div class="swiper-nav swiper-nav-next">&#9658;</div>
+      </div>
+      <div id="Worksinfo" class="hide">
+        <table id="template" class="hide">
+          <thead>
+            <tr>
+              <th colspan="2" class="product_title text-center"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>url</th>
+              <td class="product_link"></td>
+            </tr>
+            <tr>
+              <th>内容</th>
+              <td class="product_detail"></td>
+            </tr>
+            <tr>
+              <th>使用技術</th>
+              <td class="product_skill"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- Contact section -->
+    <section id="Contact" class="container py-3">
+      <div class="section_title text-center mb-3">
+        <h2 class="section_title_Contact">
+          <i class="fas fa-envelope"></i>
+          <span class="pl-2">Contact</span>
+        </h2>
+      </div>
+      <p>何かありましたらtwitterのDMからご連絡ください</p>
+      <div class="contacticon">
+        <a href="https://twitter.com/natoko5" target="_blank"><i class="fab fa-twitter pt-3"></i></a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="text-center text-muted py-4">
+    Copyright©Natoko. All Rights Reserved.
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
