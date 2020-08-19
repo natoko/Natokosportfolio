@@ -147,11 +147,4 @@
     products[i] = new Product(works[i],i,swiper_wrapper,swiper_slide,works.length);
   }
 
-  var swiper = new Swiper('.swiper-container', {
-  navigation: {
-    nextEl: '.swiper-nav-next',
-    prevEl: '.swiper-nav-prev',
-  },
-});
-
 }
